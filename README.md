@@ -14,12 +14,12 @@ A lightweight, efficient Telegram bot designed to help you manage your tasks, tr
 
 | Command | Description |
 | :--- | :--- |
-| `/start` | Initialize the bot and start a new session. |
+| `/start` | Initialize the bot and start a new session (also get added to bot's follow list). |
 | `/list` | View all your current pending tasks. |
-| `/add` | Add a new task (defaults to priority `p2`). |
-| `/delete <id>` | Permanently remove a task by its unique ID. |
-| `/finish <id>` | Mark a specific task as completed. |
-| `/unfinish <id>` | Revert a completed task back to incomplete. |
+| `/add task -p<0-9>` | Add a new task (defaults to priority `p2`). |
+| `/delete <id>` | Permanently remove a task by its unique ID (can delete multiple tasks separated by space). |
+| `/finish <id>` | Mark a specific task as completed (can finish multiple tasks separated by space). |
+| `/unfinish <id>` | Revert a completed task back to incomplete (can unfinish multiple tasks separated by space). |
 | `/clear` | Wipe all completed tasks from your list. |
 | `/removeme` | Remove yourself from the bot's follow/notification list. |
 
