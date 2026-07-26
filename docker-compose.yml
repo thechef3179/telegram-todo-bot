@@ -5,7 +5,7 @@ services:
     volumes:
       - ./logs:/usr/local/app/logs
       - ./assets:/usr/local/app/assets
-    environments:
+    environment:
       - TELEGRAM_BOT_TOKEN=ADD_YOUR_TELEGRAM_BOT_TOKEN_HERE
     networks:
       - todo-net
