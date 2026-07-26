@@ -1,0 +1,14 @@
+services:
+  tel-todo:
+    image: thechef3179/telegram-todo-bot:latest
+    container_name: tel-todo-v1
+    volumes:
+      - ./logs:/usr/local/app/logs
+      - ./assets:/usr/local/app/assets
+    environments:
+      - TELEGRAM_BOT_TOKEN=ADD_YOUR_TELEGRAM_BOT_TOKEN_HERE
+    networks:
+      - todo-net
+networks:
+  todo-net:
+    external: true
