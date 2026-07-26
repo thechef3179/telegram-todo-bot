@@ -20,7 +20,7 @@ jobs:
     - name: Build the Docker image
       run: |
         docker build . --file Dockerfile --tag thechef3179/telegram-todo-bot:latest
-        docker tag thechef3179/auth-log-monitor:latest thechef3179/telegram-todo-bot:$(date +'%y.%m.%d')
+        docker tag thechef3179/telegram-todo-bot:latest thechef3179/telegram-todo-bot:$(date +'%y.%m.%d')
     
     - name: Push the Docker image
       run: |
