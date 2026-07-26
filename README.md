@@ -40,3 +40,25 @@ A lightweight, efficient Telegram bot designed to help you manage your tasks, tr
 git clone https://github.com/thechef3179/telegram-todo-bot.git
 cd telegram-todo-bot
 ```
+
+### 2. Create a Virtual Environment
+```bash
+python -m venv venv
+source venv/bin/activate  # On Windows use `venv\Scripts\activate`
+```
+
+### 3. Install Dependencies
+```bash
+pip install -r requirements.txt
+```
+
+### 4. Environment Variables
+Create a `.env` file in the root directory and add your credentials:
+```env
+TELEGRAM_BOT_TOKEN=your_token_here
+```
+
+### 5. Run the Bot
+```bash
+python main.py
+```
